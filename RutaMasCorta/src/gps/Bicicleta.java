@@ -12,7 +12,7 @@ import java.util.*;
 /**
  * 
  * @author Sergio Fernández Pina
- * @version 1.1 :corrección error en el programa y refactorización para obtener método.
+ * @version 1.2 :corrección error en el programa y refactorización para obtener método.
  */
 public class Bicicleta {
     public Bicicleta(){
@@ -21,13 +21,13 @@ public class Bicicleta {
         String marca = "Orbea";
         }
 /**
- * El fallo del programa estaba en que evaluaba primero el parámetro camino1, por lo tanto cuando
+ * El fallo del programa consistia: evaluaba primero el parámetro camino1, por lo tanto cuando
  * terminaba no seguia con el resto de parámetros, para solucionarlo añadimos 2 bucles "for" más, uno para
- * cada parámetro al evaluarlos por separado obetenemos el total de la suma correcta.
+ * cada parámetro al evaluarlos por separado obetenemos el total de la suma correcta de cada array.
  * @param camino1 :array camino 1
  * @param camino2 :array camino 1
  * @param camino3 :array camino 1
- * @return : devuelve el resultado de la suma de los Arrays camino1,camino2, y camino3
+ * @return : devuelve el resultado de la suma de los Arrays camino1,camino2, y camino3 como sum1,sum2,sum3
  */
     
       
@@ -52,8 +52,8 @@ public class Bicicleta {
         
     }
 /**
- * Método obtenido mediante refactorización, extraer método. Evalua cual de las 3 sumas del método rutaCorta es
- * la más pequeña y devulve el resultado.    
+ * Método "evaluar" obtenido mediante refactorización, extraer método. Evalua cual de las 3 sumas del método rutaCorta es
+ * la más pequeña y devuelve el resultado.    
  * @param sum1 :atributo sum1 obtenido por el método rutacorta
  * @param sum2 :atributo sum2 obtenido por el método rutacorta
  * @param sum3 :atributo sum3 obtenido por el método rutacorta
@@ -86,7 +86,7 @@ public static String evaluar(int sum1, int sum2, int sum3) {
 /**
  * En la clase main se crean los arrays a evaluar por los métodos definidos en la clase Bicicleta
  * 
- * @param args :String del método main
+ * @param args :String del método main.
  */
     public static void main(String[] args) {
         Bicicleta bici = new Bicicleta();
